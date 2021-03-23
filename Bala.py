@@ -16,6 +16,8 @@ class Bala:
             (sin((self.anguloBala + self.desfase) * 3.14159 / 180) * self.velocidad * tiempo_delta)
         self.posicionX = self.posicionX + \
             (cos((self.anguloBala + self.desfase) * 3.14159 / 180) * self.velocidad * tiempo_delta)
+        # checar colision con obstaculo si sigue "vivo"
+       
 
     def dibujar(self):
         glPushMatrix()
